@@ -154,6 +154,16 @@ a {
 }
 
 /*The different sections*/
+
+.section {
+  background: url('/images/ooorganize.svg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 .section {
   position: relative;
   display: flex;
