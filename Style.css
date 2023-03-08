@@ -4,9 +4,6 @@
   padding: 0;
 }
 
-/* body::-webkit-scrollbar {
-  display: none;
-} */
 
 
 ::-webkit-scrollbar {
@@ -189,23 +186,31 @@ a {
   margin: auto auto auto 0;
 }
 
+::selection {
+  background: #6fffff46;
+}
+
+
+
 .section.section--Main {
   background-color: #FDEF52;
   color: #181818;
 }
 
 .section.section--intro {
-  background-color: white;
-  color: #555;
-}
-
-.section.section--Studying {
-  background-color: #de5f5f;
+  background-color: #333;
   color: white;
 }
 
+
+
+.section.section--Studying {
+  background-color: #FDEF52;
+  color: #181818;
+}
+
 .section.section--Studying svg {
-  fill: #de5f5f;
+  fill: #FDEF52;
 }
 
 .section.section--experience  {
@@ -214,24 +219,25 @@ a {
 }
 
 .section.section--experience  svg {
-  fill: #343436;
+  fill: #333;
+
 }
 
 .section.section--projects2 {
-  background-color: #63de5f;
+  background-color: #333;
   color: white;
 }
 .section.section--projects2 svg {
-  fill: #63de5f;
+  fill: #333;
 
 }
 
 .section.section--projects3 {
-  background-color: #de5f5f;
-  color: white;
+  background-color: #FDEF52;
+  color: #181818;
 }
 .section.section--projects3 svg {
-  fill: #de5f5f;
+  fill: #FDEF52;
 
 }
 
@@ -243,18 +249,18 @@ a {
 }
 
 .section.section--projects1 {
-  background-color: white;
-  color: #555;
+  background-color: #FDEF52;
+  color: #181818;
 }
 
 .section.section--projects1 svg {
   top: -50px;
-  fill: white;
+  fill: #FDEF52;
 }
 
 .section.section--pepperhill svg {
   top: -50px;
-  fill: #3A99D8;
+  fill: #000000;
 }
 
 .section.section--contact svg {
@@ -285,7 +291,7 @@ h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:
 }
 
 h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
-  color: #de5f5f;
+  color: #fd5252;
 }
 
 h1, .h1 {
