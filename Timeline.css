@@ -9,7 +9,7 @@ body{
 html {
     box-sizing: border-box;
     color: #555;
-    font-size: 23px;
+
   }
   
   a {
@@ -69,7 +69,7 @@ p {
   list-style:none;
   position:relative;
   width:50%;
-  padding:20px 40px;
+  padding:20px 10px;
   box-sizing:border-box;
 }
 .timeline ul li:nth-child(odd){
