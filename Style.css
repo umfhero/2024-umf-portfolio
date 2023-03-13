@@ -54,6 +54,13 @@ a {
   
 }
 
+ .side .side__inner .bottom .fa-instagram { 
+  color: inherit;
+   font-size: 180%;
+  padding-top: 5%;
+  position: absolute; 
+ }
+
 .side .side__inner {
   position: relative;
   height: 100%;
@@ -430,6 +437,7 @@ p a:hover {
     border-color: transparent
   }
 }
+
 
 
 
