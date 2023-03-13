@@ -12,28 +12,36 @@ html {
     font-size: 23px;
   }
   
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
   
 :root {
     --color-1: #63b4f7;
     --color-2: #1e4eb470;
   }
 
+.page {
+  background: url('/images/ooorganize.svg') no-repeat center center; 
+  height: 1000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-  ::-webkit-scrollbar {
-    width: 13px;
-    height: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #C6C6C6;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgba(37, 37, 37, 0.26);
-  }
+::-webkit-scrollbar {
+  width: 13px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C6C6C6;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(37, 37, 37, 0.26);
+}
   
 h1{
   font-size: 80px;
@@ -156,6 +164,10 @@ p {
   .timeline{
     width:100%;
   }
+  .BeEFimg {
+    float: right;
+    width: 60%;
+  }
 }
 @media(max-width:767px){
   .timeline{
@@ -164,6 +176,9 @@ p {
     margin-left: 35px;
 
   }
+
+
+
   h1{
     font-size:40px;
     text-align:center;
@@ -263,6 +278,9 @@ p {
   width: 80%;
   height: auto;
   margin-left: 11%;
-  background-color: red;
+  background-color: transparent;
 }
 
+.BeEFimg {
+  float: right;
+}
