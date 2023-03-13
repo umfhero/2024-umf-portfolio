@@ -258,3 +258,11 @@ p {
   .side .bottom:hover a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
+
+.Panel{
+  width: 80%;
+  height: auto;
+  margin-left: 11%;
+  background-color: red;
+}
+
