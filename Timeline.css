@@ -22,6 +22,7 @@ html {
   }
 
 
+
   ::-webkit-scrollbar {
     width: 13px;
     height: 10px;
@@ -53,6 +54,39 @@ p {
   box-sizing:border-box;
   
 }
+
+
+.box {
+  border-radius: 20px;
+  padding-top: 20px;
+  position: relative;
+  margin: 0 auto; 
+  background-color: #59595931;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+   border-radius:10px;
+
+  -moz-box-shadow: 5px 5px 5px #00000060;
+  -webkit-box-shadow: 5px 5px 5px #00000060 ;
+   box-shadow: 5px 5px 5px #00000060;
+   
+  width: 40%;
+  height: 60px;
+
+
+}
+
+.box:hover {
+  background-color: #595959;
+}
+
+.title {
+
+  margin-top: 3%;
+  margin-bottom: 50px;
+}
+
 .timeline:before{
   content:'';
   position:absolute;
