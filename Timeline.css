@@ -185,12 +185,29 @@ p {
   border-radius:18px;
   box-shadow:0 0 0 3px var(--color-2);
 }
+@media(max-width:1643px)
+{
+  .box {
+    height: 110px;
+  }
+  
+}
+
 @media(max-width:1000px)
 {
   .timeline{
-    width:100%;
+    width:87%;
   }
 }
+
+@media(max-width:860px)
+{
+  .box {
+    height: 150px;
+  }
+  
+}
+
 @media(max-width:767px){
   .timeline{
     width:100%;
@@ -226,8 +243,18 @@ p {
     left:50px;
     right:inherit;
   }
+
+  .box {
+    height: 160px;
+  }
 }
 
+@media(max-width:350px){
+
+  .box {
+    height: 100px;
+  }
+}
 
 /* The fixed Side */
 .side {
