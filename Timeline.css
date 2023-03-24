@@ -274,6 +274,14 @@ p {
   }
 }
 
+@media(max-width:420px){
+  .box {
+    width: 270px;
+    height: 50px;
+  }
+}
+
+
 /* The fixed Side */
 .side {
     position: fixed;
