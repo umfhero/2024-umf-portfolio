@@ -45,7 +45,9 @@ h1{
 p {
     text-align:justify;
     color: white;
+
 }
+
 .timeline{
   position:relative;
   margin: 1px auto;
@@ -264,7 +266,7 @@ p {
 
 .timeline ul li:nth-child(even):before
 {
-  box-shadow:0 0 0 3px transparent;;
+  box-shadow:0 0 0 3px transparent;
 }
 }
 @media(max-width:608px){
@@ -455,3 +457,4 @@ p a:hover {
  }
 
  
+
