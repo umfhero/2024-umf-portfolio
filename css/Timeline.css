@@ -7,7 +7,7 @@ body{
     overflow-x: hidden; 
 }
 
-.article {
+.bubble {
     background: url('/images/squar.svg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
