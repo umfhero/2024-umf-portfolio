@@ -7,6 +7,14 @@ body{
     overflow-x: hidden; 
 }
 
+.bubble {
+    background: url('/images/squar.svg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: justify;
+}
 
 html {
     box-sizing: border-box;
@@ -42,6 +50,7 @@ h1{
   font-size: 80px;
    text-align:center;
    color: white;
+   
 }
 
 p {
@@ -78,7 +87,12 @@ p {
   width: 40%;
   height: 60px;
 
-
+  background: url('/images/ooorganize.svg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: justify;
 }
 
 .box:hover {
@@ -122,6 +136,7 @@ p {
 }
 .content{
   padding-bottom:20px;
+  
 }
 .timeline ul li:nth-child(odd):before
 {
