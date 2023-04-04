@@ -364,6 +364,7 @@ p {
   
   .side .bottom:hover a:hover {
     color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
   }
 
 
