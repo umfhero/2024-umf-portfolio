@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    display: flex;
 }
 
 
@@ -177,11 +178,128 @@ h2,
     }
 }
 
+.panel {
+    margin-top: 130px;
+    margin-left: 10%;
+    width: 80%;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.41);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+}
 
 .payment {
-    margin-left: 20%;
-    padding-top: 8%;
+padding-top: 3%;
     text-align: center;
-    width: 10%;
-    height: 1000px;
+    width: 200px;
+
+    
+
+}
+
+.header {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.content {
+    margin-left: 5%;
+    float: left;
+    display: flex;
+     justify-content: space-around;
+}
+
+.right {
+
+    margin-right: 100px;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    opacity: 55%;
+    width: 400px;
+
+}
+
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: black;
+    opacity: 75%;
+
+}
+
+/*Text*/
+h1, .h1, h2, .h2, h4, .h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    margin: 0 0 1em;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #333;
+
+}
+
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h5 a {
+    color: inherit;
+}
+
+h1 a:hover,
+.h1 a:hover,
+h2 a:hover,
+.h2 a:hover,
+h3 a:hover,
+.h3 a:hover,
+h4 a:hover,
+.h5 a:hover {
+    border-bottom: 0.1875rem solid;
+}
+
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h3 span,
+.h3 span,
+h4 span,
+.h5 span {
+    color: #fd5252;
+}
+
+p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 30rem) {
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+p a {
+    font-weight: bold;
+    color: inherit;
+}
+
+p a:hover {
+    border-bottom: 0.1875rem solid;
 }
