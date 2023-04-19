@@ -12,7 +12,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="icon" type="image/x-icon" href="/images/YellowHeart.png">
+    <link rel="icon" type="image/x-icon" href="/images/GreenHeart.png">
 
     <link rel="stylesheet" href="/css/Services.css">
 
@@ -54,93 +54,36 @@
             <h1>Services</h1>
                                     <h3>web-development, Python Automation and Mentoring.</h3>
         </div>  
-        <div class="content">
 
-                    <div class="right">
+        <p>I specialize in creating unique and personalized websites to meet your specific needs. I also offer Python programming
+        services to automate repetitive tasks aimed at increased efficiency. Additionally, I also provide guidance and support
+        to individuals seeking to enhance their skills and mindset in related areas such as well-being, discipline and
+        motivation. My goal is to help you achieve your goals not only in technical fields but also in personal growth and
+        development, creating a well-rounded approach to your success.</p>
 
-                            <p>
-                            I specialize in creating unique and personalized websites to meet your specific needs. I also offer Python programming
-                            services to automate repetitive tasks aimed at increased efficiency. Additionally, I also provide guidance and support
-                            to individuals seeking to enhance their skills and mindset in related areas such as well-being, discipline and
-                            motivation. My goal is to help you achieve your goals not only in technical fields but also in personal growth and
-                            development, creating a well-rounded approach to your success.
-                        </p>
-                    </div>
-
-        <div class="payment">
-            <!-- Set up a container element for the button -->
-            <div id="paypal-button-container"></div>
-
-            <!-- Include the PayPal JavaScript SDK -->
-            <script src="https://www.paypal.com/sdk/js?client-id=AWT79h2JYBcNhOm5DoxGOzC8mLQXdq-3CV2JLaA1B-oEZa5V5PXYM9BtyJlR1zlcn0M0dDGlAM4SZhar&currency=GBP"></script>
-
-            <script>
-                // Render the PayPal button into #paypal-button-container
-                paypal.Buttons({
-
-                    style: {
-                        color: 'blue',
-                        shape: 'pill',
-                        label: 'pay',
-                        height: 40
-                    },
-
-                    // Call your server to set up the transaction
-                    createOrder: function (data, actions) {
-                        return fetch('/demo/checkout/api/paypal/order/create/', {
-                            method: 'post'
-                        }).then(function (res) {
-                            return res.json();
-                        }).then(function (orderData) {
-                            return orderData.id;
-                        });
-                    },
-
-                    // Call your server to finalize the transaction
-                    onApprove: function (data, actions) {
-                        return fetch('/demo/checkout/api/paypal/order/' + data.orderID + '/capture/', {
-                            method: 'post'
-                        }).then(function (res) {
-                            return res.json();
-                        }).then(function (orderData) {
-                            // Three cases to handle:
-                            //   (1) Recoverable INSTRUMENT_DECLINED -> call actions.restart()
-                            //   (2) Other non-recoverable errors -> Show a failure message
-                            //   (3) Successful transaction -> Show confirmation or thank you
-
-                            // This example reads a v2/checkout/orders capture response, propagated from the server
-                            // You could use a different API or structure for your 'orderData'
-                            var errorDetail = Array.isArray(orderData.details) && orderData.details[0];
-
-                            if (errorDetail && errorDetail.issue === 'INSTRUMENT_DECLINED') {
-                                return actions.restart(); // Recoverable state, per:
-                                // https://developer.paypal.com/docs/checkout/integration-features/funding-failure/
-                            }
-
-                            if (errorDetail) {
-                                var msg = 'Sorry, your transaction could not be processed.';
-                                if (errorDetail.description) msg += '\n\n' + errorDetail.description;
-                                if (orderData.debug_id) msg += ' (' + orderData.debug_id + ')';
-                                return alert(msg); // Show a failure message (try to avoid alerts in production environments)
-                            }
-
-                            // Successful capture! For demo purposes:
-                            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-                            var transaction = orderData.purchase_units[0].payments.captures[0];
-                            alert('Transaction ' + transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
-
-                            // Replace the above to show a success message within this page, e.g.
-                            // const element = document.getElementById('paypal-button-container');
-                            // element.innerHTML = '';
-                            // element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                            // Or go to another URL:  actions.redirect('thank_you.html');
-                        });
-                    }
-
-                }).render('#paypal-button-container');
-            </script>
+        <div class="container">
+            <div class="top">
+            </div>
+            <div class="package-container">
+            <div class="packages">
+                <h1 class="products">Python Automation</h1>
+                <h2 class="text1">&pound;80.00</h2>
+                <a href="https://buy.stripe.com/28odTZ0ec6Zr6l2aEF" class="button button1">purchase</a>
+            </div>
+            <div class="packages">
+                <h1 class="products">web-development</h1>
+                <h2 class="text1">&pound;15.00</h2>
+                <a href="https://buy.stripe.com/eVa9DJ7GE4RjgZG5km" class="button button2">purchase</a>
+            </div>
+            <div class="packages">
+                <h1 class="products">Mentoring</h1>
+                <h2 class="text1">&pound;22.00</h2>
+                <a href="https://buy.stripe.com/5kAcPVgda0B35gY000" class="button button3">purchase</a>
+            </div>
+            </div>
         </div>
-        </div>
+
+
     </div>
 </body>
 
