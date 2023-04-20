@@ -367,10 +367,10 @@ p a:hover {
 }
 
 .packages:hover {
-    background-color: #1fac5c56;
+    background-color: #ffd0d053;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(0, 0, 0, 0.95);
-    transition-duration: 0.9s;
+
+    transition-duration: 0.6s;
 }
 
 h1,
@@ -409,6 +409,8 @@ label {
   border-radius: 50px;
   color: #f4f4f4;
   transition: all 0.3s ease 0s;
+background-color: #ed4c4cc0;
+    box-shadow: 0 0 10px 0 #d3132c23 inset, 0 0 20px 2px #e66173a1;
 }
 
 .button:hover {
@@ -416,18 +418,15 @@ label {
 }
 
 .button1 {
-  background-color: #0A2463;
-  box-shadow: 0 0 10px 0 #0A2463 inset, 0 0 20px 2px #0A2463;
+
 }
 
 .button2 {
-  background-color: #2B303A;
-  box-shadow: 0 0 10px 0 #2B303A inset, 0 0 20px 2px #2B303A;
+
 }
 
 .button3 {
-  background-color: #d52941;
-  box-shadow: 0 0 10px 0 #d52941 inset, 0 0 20px 2px #d52941;
+
 }
 
 
