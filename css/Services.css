@@ -331,6 +331,15 @@ p a:hover {
     }
 }
 
+@media only screen and (max-height: 769px) {
+
+    .panel {
+        margin-top: 1%;
+    }
+
+
+}
+
 .container {
   width: 100%;
 }
@@ -355,6 +364,13 @@ p a:hover {
     border: 1px solid rgba(255, 255, 255, 0.95);
     flex-wrap: wrap;
     padding-top: 10px;
+}
+
+.packages:hover {
+    background-color: #1fac5c56;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.95);
+    transition-duration: 0.9s;
 }
 
 h1,
