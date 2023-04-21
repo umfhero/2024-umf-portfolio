@@ -218,21 +218,23 @@ p {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     color: black;
-    opacity: 55%;
+    opacity: 65%;
     margin-left: 4.5%;
     width: 50%;
     padding: 10px;
+
 
 }
 
 h3 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
     letter-spacing: -1px;
     color: black;
     opacity: 75%;
+
 
 }
 
@@ -244,6 +246,7 @@ h1, .h1, h2, .h2, h4, .h5 {
     line-height: 1;
     letter-spacing: -1px;
     color: #333;
+    
 
 }
 
@@ -288,7 +291,7 @@ p {
 
 @media (min-width: 30rem) {
     p {
-        font-size: 0.875rem;
+        font-size: 0.995rem;
     }
 }
 
@@ -411,8 +414,8 @@ label {
   border-radius: 50px;
   color: #f4f4f4;
   transition: all 0.3s ease 0s;
-background-color: #ed4c4cc0;
-    box-shadow: 0 0 10px 0 #d3132c23 inset, 0 0 20px 2px #e66173a1;
+  background-color: #f12323c0;
+  box-shadow: 0 0 10px 0 #f22222c0 inset, 0 0 20px 2px #cd0303c0;
 }
 
 .button:hover {
@@ -463,5 +466,6 @@ input:checked + .slider:before {
 
 li {
     list-style-type: none;
+    font-size: 18px;
 }
 
