@@ -20,6 +20,8 @@ a {
     text-decoration: none;
 }
 
+
+
 /* The fixed Side */
 .side {
     position: fixed;
@@ -379,10 +381,10 @@ h2 {
 }
 
 
+
 .first {
-  margin-top: 40px;
-  border-top: 1px solid #f4f4f4;
-  
+    margin-top: 10%;
+    border-top: 2px solid black;
 }
 
 
@@ -458,3 +460,8 @@ input:checked + .slider:before {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+li {
+    list-style-type: none;
+}
+
