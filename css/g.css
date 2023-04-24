@@ -1,0 +1,429 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #419D78;
+        font-family: 'Nunito Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(37, 37, 37, 0.26);
+}
+
+html {
+    box-sizing: border-box;
+    color: #555;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* The fixed Side */
+.side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 51px;
+    border-right: 1px dashed rgba(0, 0, 0, 0.3);
+
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.0875rem;
+    font-size: 13px;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+
+.side:hover {
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.side .side__inner .bottom .fa-instagram {
+    color: inherit;
+    font-size: 180%;
+    padding-top: 5%;
+    position: absolute;
+}
+
+.side .side__inner {
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+
+}
+
+.side a {
+
+    color: inherit;
+    word-spacing: 0;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+
+.side .top,
+.side .bottom {
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg) perspective(1px);
+    transform-origin: 50px 50px;
+    height: 40px;
+    line-height: 50px;
+    white-space: nowrap;
+    word-spacing: 1.1rem;
+}
+
+.side .top {
+    top: 25px;
+    text-align: right;
+    color: black;
+}
+
+.side .bottom {
+    top: auto;
+    bottom: 75px;
+}
+
+.side .bottom:hover a {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.side .bottom:hover a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+}
+
+/*The first navigation */
+
+.anchornav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.anchornav li {
+    display: block;
+}
+
+.anchornav li::after {
+    content: "";
+    width: 1.3rem;
+    display: block;
+    height: 2px;
+    background: black;
+}
+
+.anchornav li:last-child::after {
+    display: none;
+}
+
+.anchornav a {
+    display: block;
+    padding: 1em 0;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+
+.anchornav a span {
+    display: inline;
+    padding: 0.5em 0 0;
+    opacity: 0.3;
+    letter-spacing: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: none;
+}
+
+.anchornav a:hover {
+    color: #181818;
+    font-size: 14px;
+}
+
+.anchornav a:hover span {
+    opacity: 100%;
+    color: #181818;
+}
+
+/*Text*/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    margin: 0 0 1em;
+    line-height: 1;
+    letter-spacing: -1px;
+
+}
+
+h3 {
+    text-align: justify;
+}
+
+@media (min-width: 30rem) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h5 {
+        letter-spacing: -2px;
+    }
+}
+
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h5 a {
+    color: inherit;
+}
+
+h1 a:hover,
+.h1 a:hover,
+h2 a:hover,
+.h2 a:hover,
+h3 a:hover,
+.h3 a:hover,
+h4 a:hover,
+.h5 a:hover {
+    border-bottom: 0.1875rem solid;
+}
+
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h3 span,
+.h3 span,
+h4 span,
+.h5 span {
+    color: #fd5252;
+}
+
+h1,
+.h1 {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 30rem) {
+
+    h1,
+    .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 30rem) {
+
+    h2,
+    .h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.pre {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+    letter-spacing: 1.4px;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    color: inherit;
+}
+
+.pre span {
+    font-size: 0.9em;
+    margin-right: 0.4em;
+    opacity: 0.5;
+}
+
+.pre:hover {
+    opacity: 1;
+}
+
+p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 30rem) {
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+p a {
+    font-weight: bold;
+    color: inherit;
+}
+
+p a:hover {
+    border-bottom: 0.1875rem solid;
+}
+
+.lead {
+    display: block;
+    font-size: 0.875rem;
+    margin: 0;
+    text-align: justify;
+}
+
+@media (min-width: 30rem) {
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+
+.projects p {
+    font-size: inherit;
+    color: #343436;
+    opacity: 0.7;
+}
+
+
+.typing-demo {
+    width: 8ch;
+    animation: typing 2s, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: #0a246b;
+
+}
+
+.container td {
+        text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+
+    text-align: left;
+    overflow: hidden;
+    width: 50%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+
+        background: rgba(255, 255, 255, 0.49);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.4px);
+        -webkit-backdrop-filter: blur(8.4px);
+        border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.container td,
+.container th {
+    
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+
+
+.container td:first-child {
+    
+    color: #030000;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .container td:nth-child(4),
+    .container th:nth-child(4) {
+        display: none;
+    }
+}
+@media (max-width: 958px) {
+
+    .container td:nth-child(4),
+    .container th:nth-child(4) {
+        display: none;
+    }
+.container {
+    width: 80%;
+
+}
+}
