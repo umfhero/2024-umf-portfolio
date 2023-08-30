@@ -217,10 +217,10 @@ p {
   right: -188px;
   margin: 0;
   padding: 5px 20px;
-  background: rgb(44, 197, 69);
-  color: #fff;
-  border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(135, 250, 169, 0.74);
+  background: rgba(44, 197, 121, 0.459);
+    color: #ffffffd0;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.144);
 }
 
 
@@ -242,10 +242,10 @@ p {
   text-align: center;
   margin: 0;
   padding: 5px 0px;
-  background: rgb(44, 197, 69);
-  color: #fff;
-  border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(135, 250, 169, 0.74);
+  background: rgba(44, 197, 121, 0.459);
+    color: #ffffffd0;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.144);
 }
 
 
