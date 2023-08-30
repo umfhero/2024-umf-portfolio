@@ -192,6 +192,7 @@ p {
   border-radius:18px;
   box-shadow:0 0 0 3px var(--color-2);
 }
+
 .timeline ul li:nth-child(even) .time
 {
   position:absolute;
@@ -204,6 +205,50 @@ p {
   border-radius:18px;
   box-shadow:0 0 0 3px var(--color-2);
 }
+
+.timeline ul li .price h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+}
+.timeline ul li:nth-child(odd) .price {
+  position: absolute;
+  top: 85px;
+  right: -188px;
+  margin: 0;
+  padding: 5px 20px;
+  background: rgb(44, 197, 69);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(135, 250, 169, 0.74);
+}
+
+
+
+
+
+
+.timeline ul li .priceL h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+}
+
+.timeline ul li:nth-child(even) .priceL {
+  position: absolute;
+  top: 85px;
+  right: 108%;
+  width: 125px;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0px;
+  background: rgb(44, 197, 69);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(135, 250, 169, 0.74);
+}
+
+
 @media(max-width:1643px)
 {
   .box {
