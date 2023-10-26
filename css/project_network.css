@@ -391,3 +391,9 @@ body .main-article .gallery .mask-off img {
     padding-top: 15%;
 
 }
+
+.link {
+    color: white;
+    font-size: 18px;
+    opacity: 70%;
+}
