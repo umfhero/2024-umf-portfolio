@@ -1,14 +1,23 @@
-*, *::before, *::after {
+:root {
+  --Accent1: #F49097;
+  /* var(--Accent1) */
+  --Accent2: #faf38c;
+  /* var(--Accent2) */
+}
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  
+
 
 }
 
 body {
-  overflow-x: hidden; 
-  
+  overflow-x: hidden;
+
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +53,7 @@ a {
   z-index: 1000;
   width: 51px;
   border-right: 1px dashed rgba(0, 0, 0, 0.3);
-  
+
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
@@ -55,26 +64,27 @@ a {
 
 .side:hover {
   color: rgba(0, 0, 0, 0.5);
-  
+
 }
 
- .side .side__inner .bottom .fa-instagram { 
+.side .side__inner .bottom .fa-instagram {
   color: inherit;
-   font-size: 180%;
+  font-size: 180%;
   padding-top: 5%;
-  position: absolute; 
- }
+  position: absolute;
+}
 
 .side .side__inner {
   position: relative;
   height: 100%;
   white-space: nowrap;
-  
+
 }
 
 .side a {
-  
-  color: inherit;
+
+  color: rgb(0, 0, 0);
+  font-weight: 900;
   word-spacing: 0;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
 }
@@ -86,10 +96,17 @@ a {
   transform: rotate(-90deg) perspective(1px);
   transform-origin: 50px 50px;
   height: 40px;
-  line-height: 50px;
+  line-height: 59px;
   white-space: nowrap;
   word-spacing: 1.1rem;
 }
+.container {
+  display: flex;
+  
+}
+
+
+
 
 .side .top {
   top: 25px;
@@ -99,7 +116,7 @@ a {
 
 .side .bottom {
   top: auto;
-  bottom: 75px;
+  bottom: 92px;
 }
 
 .side .bottom:hover a {
@@ -108,7 +125,7 @@ a {
 
 .side .bottom:hover a:hover {
   color: rgba(0, 0, 0, 0.8);
-      font-size: 15px;
+  font-size: 15px;
 }
 
 /*The first navigation */
@@ -168,12 +185,12 @@ a {
 /*The different sections*/
 
 .section {
-  background: url('/images/ooorganize.svg') no-repeat center center; 
+  background: url('/images/ooorganize.svg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+
 }
 
 #noisy {
@@ -193,7 +210,7 @@ a {
   width: 100%;
   align-content: center;
   padding: 20vh 50px 20vh 75px;
-  
+
 }
 
 .section svg {
@@ -203,79 +220,81 @@ a {
   right: 0;
   width: 100%;
   height: 50px;
-  
+
 }
 
 .section svg.bottom {
   bottom: 0;
   top: auto;
   fill: grey;
-  
+
 }
 
 .section .section__inner {
   height: 100%;
   max-width: 800px;
   margin: auto auto auto 0;
-  
+
 }
 
 ::selection {
   background: #6fffff46;
-  
+
 }
 
 
 
 .section.section--Main {
-  
-   background-color: #419D78;
-   
+
+  background-color: var(--Accent2);
+
   color: #181818;
 }
 
 .section.section--intro {
-  background-color: #333;
+  background-color: var(--Accent1);
   color: white;
-  
+
 }
 
 
 
 .section.section--Studying {
-  background-color: #419D78;
+  background-color: var(--Accent2);
   color: #181818;
 }
 
 .section.section--Studying svg {
-  fill: #419D78;
+  fill: var(--Accent2)
 }
 
-.section.section--experience  {
-  background-color: #333;
+.section.section--experience {
+  background-color: var(--Accent1);
   color: white;
 }
 
-.section.section--experience  svg {
-  fill: #333;
+.section.section--experience svg {
+  fill: var(--Accent1);
 
 }
 
 .section.section--projects2 {
-  background-color: #333;
+  background-color: var(--Accent1);
   color: white;
 }
+
 .section.section--projects2 svg {
-  fill: #333;
+  fill: var(--Accent1);
 
 }
 
 .section.section--projects3 {
-  background-color: #419D78;
+  background-color: var(--Accent2);
   color: #181818;
 }
+
 .section.section--projects3 svg {
-  fill: #419D78;
+  fill: var(--Accent2);
 
 }
 
@@ -287,13 +306,13 @@ a {
 }
 
 .section.section--projects1 {
-  background-color: #419D78;
+  background-color: var(--Accent2);
   color: #181818;
 }
 
 .section.section--projects1 svg {
   top: -50px;
-  fill: #419D78;
+  fill: var(--Accent2);
 }
 
 .section.section--pepperhill svg {
@@ -306,7 +325,14 @@ a {
 }
 
 /*Text*/
-h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h5 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
   margin: 0 0 1em;
@@ -314,55 +340,91 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
   letter-spacing: -1px;
 
 }
+
 h3 {
   text-align: justify;
-  
+
 }
 
 @media (min-width: 30rem) {
-  h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h5 {
     letter-spacing: -2px;
-    
+
   }
 }
 
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h5 a {
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h5 a {
   color: inherit;
-  
+
 }
 
-h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h5 a:hover {
+h1 a:hover,
+.h1 a:hover,
+h2 a:hover,
+.h2 a:hover,
+h3 a:hover,
+.h3 a:hover,
+h4 a:hover,
+.h5 a:hover {
   border-bottom: 0.1875rem solid;
 }
 
-h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h3 span,
+.h3 span,
+h4 span,
+.h5 span {
   color: #fd5252;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 1.2rem;
-  
+
 }
 
 @media (min-width: 30rem) {
-  h1, .h1 {
-    font-size: 2.5rem;
+
+  h1,
+  .h1 {
+    font-size: 1.5rem;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.2rem;
-  
+
 }
 
 @media (min-width: 30rem) {
-  h2, .h2 {
-    font-size: 2.5rem;
+
+  h2,
+  .h2 {
+    font-size: 1.5rem;
   }
 }
 
 .pre {
-  
+
   display: inline-block;
   font-size: 12px;
   margin: 0;
@@ -388,7 +450,7 @@ p {
   font-size: 0.75rem;
   line-height: 1.4;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+
 }
 
 @media (min-width: 30rem) {
@@ -415,13 +477,14 @@ p a:hover {
 
 @media (min-width: 30rem) {
   .lead {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 }
 
 .projects {
   font-size: 0.75rem;
 }
+
 .projects.block {
   display: inline-block;
   width: 100%;
@@ -449,13 +512,13 @@ p a:hover {
 
 
 .typing-demo {
-  width: 8ch;
+  width: 41ch;
   animation: typing 2s, blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 @keyframes typing {
@@ -463,18 +526,9 @@ p a:hover {
     width: 0
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent
   }
 }
-
-
-
-
-
-
-
-
-
