@@ -8,7 +8,7 @@ body{
 }
 
 .bubble {
-    background: url('/images/squar.svg') no-repeat center center;
+    background: url('/images/Animated\ Shape.svg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -368,11 +368,12 @@ p {
     color: rgba(255, 255, 255, 0.5);
   }
   
-  .side .side__inner {
-    position: relative;
-    height: 100%;
-    white-space: nowrap;
-  }
+.side .side__inner {
+  position: relative;
+  height: 95%;
+  white-space: nowrap;
+
+}
   
   .side a {
     color: inherit;

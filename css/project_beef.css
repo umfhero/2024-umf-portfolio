@@ -65,11 +65,11 @@ article {
 .side:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .side .side__inner {
   position: relative;
-  height: 100%;
+  height: 95%;
   white-space: nowrap;
+
 }
 
 .side a {
