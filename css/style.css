@@ -213,9 +213,11 @@ a {
 }
 
 /*The different sections*/
-
+.fops {
+  
+}
 .section {
-  background: url('/images/ooorganize.svg') no-repeat center center;
+  background: url('/images/Animated\ Shape\ \(3\).svg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
