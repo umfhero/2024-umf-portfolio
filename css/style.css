@@ -136,6 +136,7 @@ a {
   max-width:70%;
   height: auto;
   opacity: 1;
+  mix-blend-mode:lighten;
 }
 
 .side .top {
