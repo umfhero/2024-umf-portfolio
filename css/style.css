@@ -575,10 +575,11 @@ p a:hover {
 .studying-image {
   display: flex;
   align-items: center;
+  mix-blend-mode: lighten;
 }
 
 .studying-image img {
-  max-width: 25%;
+  max-width: 35%;
   height: auto;
   opacity: 0.8;
   margin-left: 25%;
