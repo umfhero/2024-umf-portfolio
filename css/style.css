@@ -59,7 +59,7 @@ a {
   bottom: 0;
   z-index: 1000;
   width: 51px;
-  border-right: 1px dashed rgba(0, 0, 0, 0.192);
+  border-right: 1px dashed rgba(255, 255, 255, 0.281);
 
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Nunito Sans', sans-serif;
@@ -67,6 +67,9 @@ a {
   letter-spacing: 0.0875rem;
   font-size: 13px;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+              backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
 }
 
 .side:hover {
@@ -188,7 +191,7 @@ a {
   padding: 1em 0;
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1.4px;
   color: inherit;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
@@ -204,13 +207,13 @@ a {
 }
 
 .anchornav a:hover {
-  color: #569951;
-  font-size: 14px;
+  color: #6fc768;
+  font-size: 19px;
 }
 
 .anchornav a:hover span {
   opacity: 100%;
-  color: #1d0f0f;
+  color: #ffffff;
 }
 
 /*The different sections*/
@@ -242,7 +245,7 @@ a {
   min-height: 60vh;
   width: 100%;
   align-content: center;
-  padding: 20vh 50px 20vh 75px;
+  padding: 1vh 50px 20vh 75px;
 
 }
 
@@ -545,7 +548,7 @@ p a:hover {
 
 
 .typing-demo {
-  width: 36.1ch;
+  width: 36.5ch;
   animation: typing 2s, blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;

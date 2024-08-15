@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Umar M. Faiz">
+    <link rel="icon" type="image/x-icon" href="/images/GreenHeart.png">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <title>umf | Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #240505;
+            color: #ffffff;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 60px;
+
+        }
+
+
+        .section--Main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f50000; /* Or your preferred background color */
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .section.section--Main {
+        background-color: rgb(34, 1, 37);
+
+        }
+
+        .section--Main::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/path/to/your/background/image.png'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2; /* Adjust opacity as needed */
+            z-index: -1;
+        }
+
+        .container {
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 250%;
+        }
+
+        p {
+            font-size: 105%;
+        }
+        .Maiz {
+        align-items: center;
+        }
+
+        .Maiz img {
+        max-width:70%;
+        height: 600px;
+        opacity: 100%;
+        mix-blend-mode:lighten;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="side">
+        <div class="side__inner">
+            <div class="top"><a href="/Index.html"> → Home </a></div>
+            <div class="bottom">
+                <a href="#">&nbsp;</a>
+                <a href="mailto:umcfaiz@gmail.com">Email</a>
+                <a href="/Pages/Timeline.html">TimeLine</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section section--Main" id="Main">
+        <div>
+            <div class="Maiz">
+                <img src="/images/umft.png" alt="Transparent Image">
+            </div>
+            <p>We are currently preparing something amazing. Please stay tuned!</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
