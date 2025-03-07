@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 body{
-    background-color: #333;
+    background-color: #091d0f;
     padding:0;
     margin:0;
     font-family: 'Montserrat', sans-serif;
@@ -8,7 +8,7 @@ body{
 }
 
 .bubble {
-    background: url('/images/squar.svg') no-repeat center center;
+    background: url('/images/Animated\ Shape\ \(2\).svg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -354,13 +354,16 @@ p {
     bottom: 0;
     z-index: 1000;
     width: 51px;
-    border-right: 1px dashed rgba(255, 255, 255, 0.3);
+    border-right: 1px dashed rgba(255, 255, 255, 0.281);
     color: rgba(255, 255, 255, 0.5);
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.0875rem;
     font-size: 13px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+                backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
   }
   
   
@@ -368,11 +371,12 @@ p {
     color: rgba(255, 255, 255, 0.5);
   }
   
-  .side .side__inner {
-    position: relative;
-    height: 100%;
-    white-space: nowrap;
-  }
+.side .side__inner {
+  position: relative;
+  height: 95%;
+  white-space: nowrap;
+
+}
   
   .side a {
     color: inherit;
