@@ -3,32 +3,26 @@
 }
 
 body {
-    position: relative;
-    background-color: #251706;
+    background-color: #333;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: calc(max(100vh, 400px));
     padding: 100px;
     color: white;
     overflow-x: hidden;
-  }
-  
-  body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/images/Animated Shape (3).svg') repeat-y center top;
+
+}
+
+
+section {
+    background: url('/images/ooorganize.svg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    opacity: 0.3; /* Adjust opacity here */
-    z-index: -1; /* Ensure it is behind the content */
-  }
-
-
-
+    text-align: justify;
+}
 
 ::-webkit-scrollbar {
     width: 13px;
@@ -60,16 +54,13 @@ article {
     bottom: 0;
     z-index: 1000;
     width: 51px;
-    border-right: 1px dashed rgba(255, 255, 255, 0.281);
+    border-right: 1px dashed rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.5);
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.0875rem;
     font-size: 13px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
-                backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
 }
 
 
@@ -230,12 +221,8 @@ body .summary {
     margin-top: 50px;
     padding: 30px 50px;
     border-radius: 16px;
-    background: rgba(89, 89, 89, 0.3); 
-    backdrop-filter: blur(10px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-    border: 1px solid rgba(255, 255, 255, 0.24); 
-  }
+    box-shadow: 0 0 0 1px #f2f2f2;
+}
 
 body .summary .summary-item {
     width: 100%;
@@ -275,16 +262,14 @@ body .main-article blockquote {
     position: relative;
     margin: 40px 0;
     padding: 40px;
-
+    background-color: #59595931;
     border-radius: 16px;
 
-    background: rgba(89, 89, 89, 0.3); 
-    backdrop-filter: blur(10px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-    border: 1px solid rgba(255, 255, 255, 0.24); 
-}
 
+    -moz-box-shadow: 5px 5px 5px #00000060;
+    -webkit-box-shadow: 5px 5px 5px #00000060;
+    box-shadow: 5px 5px 5px #00000060;
+}
 
 body .main-article .gallery {
     display: grid;

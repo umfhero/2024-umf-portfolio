@@ -1,30 +1,14 @@
-:root {
-  --Accent1: #09141d;
-  /* var(--Accent1) */
-  --Accent2: #091d0f;
-  /* var(--text1) */
-
-
-    --Text1: white;
-  /* var(--Accent1) */
-  --Text2: white;
-  /* var(--text2) */
-      
-}
-
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-
+  
 
 }
 
 body {
-  overflow-x: hidden;
-
+  overflow-x: hidden; 
+  
 }
 
 ::-webkit-scrollbar {
@@ -59,42 +43,38 @@ a {
   bottom: 0;
   z-index: 1000;
   width: 51px;
-  border-right: 1px dashed rgba(255, 255, 255, 0.281);
-
+  border-right: 1px dashed rgba(0, 0, 0, 0.3);
+  
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.0875rem;
   font-size: 13px;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
-              backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
 }
 
 .side:hover {
-  color: rgb(0, 0, 0);
-
+  color: rgba(0, 0, 0, 0.5);
+  
 }
 
-.side .side__inner .bottom .fa-instagram {
+ .side .side__inner .bottom .fa-instagram { 
   color: inherit;
-  font-size: 180%;
+   font-size: 180%;
   padding-top: 5%;
-  position: absolute;
-}
+  position: absolute; 
+ }
 
 .side .side__inner {
   position: relative;
-  height: 95%;
+  height: 100%;
   white-space: nowrap;
-
+  
 }
 
 .side a {
-
-  color: rgb(255, 255, 255);
-  font-weight: 900;
+  
+  color: inherit;
   word-spacing: 0;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
 }
@@ -106,40 +86,9 @@ a {
   transform: rotate(-90deg) perspective(1px);
   transform-origin: 50px 50px;
   height: 40px;
-  line-height: 59px;
+  line-height: 50px;
   white-space: nowrap;
   word-spacing: 1.1rem;
-}
-.container {
-  display: flex;
-  
-}
-.ConLeft {
-  flex: 1;
-}
-
-.selection {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  flex: 1;
-}
-
-.ConRight {
-  display: flex;
-  align-items: center;
-  margin-left: 55%;
-  /* Adjust this value if needed */
-}
-
-.ConRight img {
-  max-width:70%;
-  height: auto;
-  opacity: 1;
-  mix-blend-mode:lighten;
 }
 
 .side .top {
@@ -150,16 +99,16 @@ a {
 
 .side .bottom {
   top: auto;
-  bottom: 92px;
+  bottom: 75px;
 }
 
 .side .bottom:hover a {
-  color: #61885e;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .side .bottom:hover a:hover {
-  color: #5fc258;
-  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+      font-size: 15px;
 }
 
 /*The first navigation */
@@ -191,7 +140,7 @@ a {
   padding: 1em 0;
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 1.4px;
   color: inherit;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
@@ -207,26 +156,24 @@ a {
 }
 
 .anchornav a:hover {
-  color: #6fc768;
-  font-size: 19px;
+  color: #181818;
+  font-size: 14px;
 }
 
 .anchornav a:hover span {
   opacity: 100%;
-  color: #ffffff;
+  color: #181818;
 }
 
 /*The different sections*/
-.fops {
-  
-}
+
 .section {
-  background: url('/images/Animated\ Shape\ \(3\).svg') no-repeat center center;
+  background: url('/images/ooorganize.svg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  
 }
 
 #noisy {
@@ -245,8 +192,8 @@ a {
   min-height: 60vh;
   width: 100%;
   align-content: center;
-  padding: 1vh 50px 20vh 75px;
-
+  padding: 20vh 50px 20vh 75px;
+  
 }
 
 .section svg {
@@ -256,81 +203,79 @@ a {
   right: 0;
   width: 100%;
   height: 50px;
-
+  
 }
 
 .section svg.bottom {
   bottom: 0;
   top: auto;
   fill: grey;
-
+  
 }
 
-.section__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.section .section__inner {
+  height: 100%;
+  max-width: 800px;
+  margin: auto auto auto 0;
+  
 }
 
 ::selection {
   background: #6fffff46;
   
-
 }
 
 
 
 .section.section--Main {
-
-  background-color: var(--Accent2);
-
-  color: var(--Text2);
+  
+   background-color: #419D78;
+   
+  color: #181818;
 }
 
 .section.section--intro {
-  background-color: var(--Accent1);
-  color: var(--Text1);
-
+  background-color: #333;
+  color: white;
+  
 }
 
 
 
 .section.section--Studying {
-  background-color: var(--Accent2);
-  color: var(--Text2);
+  background-color: #419D78;
+  color: #181818;
 }
 
 .section.section--Studying svg {
-  fill: var(--Accent2)
+  fill: #419D78;
 }
 
-.section.section--experience {
-  background-color: var(--Accent1);
-  color: var(--Text1);
+.section.section--experience  {
+  background-color: #333;
+  color: white;
 }
 
-.section.section--experience svg {
-  fill: var(--Accent1);
+.section.section--experience  svg {
+  fill: #333;
 
 }
 
 .section.section--projects2 {
-  background-color: var(--Accent1);
-  color: var(--Text1);
+  background-color: #333;
+  color: white;
 }
-
 .section.section--projects2 svg {
-  fill: var(--Accent1);
+  fill: #333;
 
 }
 
 .section.section--projects3 {
-  background-color: var(--Accent2);
-  color: var(--Text2);
+  background-color: #419D78;
+  color: #181818;
 }
-
 .section.section--projects3 svg {
-  fill: var(--Accent2);
+  fill: #419D78;
 
 }
 
@@ -342,13 +287,13 @@ a {
 }
 
 .section.section--projects1 {
-  background-color: var(--Accent2);
-  color: var(--Text2);
+  background-color: #419D78;
+  color: #181818;
 }
 
 .section.section--projects1 svg {
   top: -50px;
-  fill: var(--Accent2);
+  fill: #419D78;
 }
 
 .section.section--pepperhill svg {
@@ -361,14 +306,7 @@ a {
 }
 
 /*Text*/
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h5 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
   margin: 0 0 1em;
@@ -376,91 +314,55 @@ h4,
   letter-spacing: -1px;
 
 }
-
 h3 {
   text-align: justify;
-
+  
 }
 
 @media (min-width: 30rem) {
-
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h5 {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
     letter-spacing: -2px;
-
+    
   }
 }
 
-h1 a,
-.h1 a,
-h2 a,
-.h2 a,
-h3 a,
-.h3 a,
-h4 a,
-.h5 a {
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h5 a {
   color: inherit;
-
+  
 }
 
-h1 a:hover,
-.h1 a:hover,
-h2 a:hover,
-.h2 a:hover,
-h3 a:hover,
-.h3 a:hover,
-h4 a:hover,
-.h5 a:hover {
+h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h5 a:hover {
   border-bottom: 0.1875rem solid;
 }
 
-h1 span,
-.h1 span,
-h2 span,
-.h2 span,
-h3 span,
-.h3 span,
-h4 span,
-.h5 span {
+h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
   color: #fd5252;
 }
 
-h1,
-.h1 {
+h1, .h1 {
   font-size: 1.2rem;
-
+  
 }
 
 @media (min-width: 30rem) {
-
-  h1,
-  .h1 {
-    font-size: 1.5rem;
+  h1, .h1 {
+    font-size: 2.5rem;
   }
 }
 
-h2,
-.h2 {
+h2, .h2 {
   font-size: 1.2rem;
-
+  
 }
 
 @media (min-width: 30rem) {
-
-  h2,
-  .h2 {
-    font-size: 1.5rem;
+  h2, .h2 {
+    font-size: 2.5rem;
   }
 }
 
 .pre {
-
+  
   display: inline-block;
   font-size: 12px;
   margin: 0;
@@ -486,7 +388,7 @@ p {
   font-size: 0.75rem;
   line-height: 1.4;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  
 }
 
 @media (min-width: 30rem) {
@@ -513,14 +415,13 @@ p a:hover {
 
 @media (min-width: 30rem) {
   .lead {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 }
 
 .projects {
   font-size: 0.75rem;
 }
-
 .projects.block {
   display: inline-block;
   width: 100%;
@@ -548,46 +449,13 @@ p a:hover {
 
 
 .typing-demo {
-  width: 36.5ch;
+  width: 8ch;
   animation: typing 2s, blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 1em;
-}
-
-.text-content {
-  flex: 1;
-}
-
-.studying-header-container {
-  display: flex;
-  align-items: center;
-  /* Center the image vertically with the heading */
-  margin-bottom: 20px;
-  /* Space between heading/image and paragraph */
-}
-
-.studying-header-container h2 {
-  margin-right: 20px;
-  /* Space between heading and image */
-
-}
-
-.studying-image {
-  display: flex;
-  align-items: center;
-  mix-blend-mode: lighten;
-}
-
-.studying-image img {
-  max-width: 35%;
-  height: auto;
-  opacity: 0.8;
-  margin-left: 25%;
-
-  /* Adjust height as needed */
+  font-size: 2em;
 }
 
 @keyframes typing {
@@ -595,9 +463,18 @@ p a:hover {
     width: 0
   }
 }
-
+    
 @keyframes blink {
   50% {
     border-color: transparent
   }
 }
+
+
+
+
+
+
+
+
+

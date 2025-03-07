@@ -30,16 +30,13 @@ a {
     bottom: 0;
     z-index: 1000;
     width: 51px;
-    border-right: 1px dashed rgba(255, 255, 255, 0.281);
+    border-right: 1px dashed black;
     color: black;
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.0875rem;
     font-size: 13px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
-                backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
 }
 
 
@@ -49,9 +46,8 @@ a {
 
 .side .side__inner {
     position: relative;
-    height: 95%;
+    height: 100%;
     white-space: nowrap;
-
 }
 
 .side a {
