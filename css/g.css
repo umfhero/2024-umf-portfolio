@@ -37,8 +37,6 @@ a {
 }
 
 
-
-
 /* The fixed Side */
 .side {
     position: fixed;
@@ -48,42 +46,44 @@ a {
     z-index: 1000;
     width: 51px;
     border-right: 1px dashed rgba(255, 255, 255, 0.281);
-
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.0875rem;
     font-size: 13px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
-                backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
+    background: url('/images/glass-bg.jpg') repeat-y;
+    /* Looping background image */
+    background-size: cover;
 }
 
 .side:hover {
-    color: rgba(0, 0, 0, 0.5);
-
-}
-
-.side .side__inner .bottom .fa-instagram {
-    color: inherit;
-    font-size: 180%;
-    padding-top: 5%;
-    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .side .side__inner {
     position: relative;
     height: 95%;
     white-space: nowrap;
-
 }
 
 .side a {
-
-    color: inherit;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
     word-spacing: 0;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+    text-decoration: none;
+    /* Remove default underline */
+    border-bottom: 2px solid transparent;
+    /* Add transparent underline */
+}
+
+.side a:hover {
+    border-bottom: 2px solid white;
+    /* White underline on hover */
 }
 
 .side .top,
@@ -93,7 +93,7 @@ a {
     transform: rotate(-90deg) perspective(1px);
     transform-origin: 50px 50px;
     height: 40px;
-    line-height: 50px;
+    line-height: 59px;
     white-space: nowrap;
     word-spacing: 1.1rem;
 }
@@ -101,7 +101,7 @@ a {
 .side .top {
     top: 25px;
     text-align: right;
-    color: black;
+    color: white;
 }
 
 .side .bottom {
@@ -110,14 +110,20 @@ a {
 }
 
 .side .bottom:hover a {
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .side .bottom:hover a:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: white;
     font-size: 15px;
 }
 
+.side .side__inner .bottom .fa-instagram {
+    color: inherit;
+    font-size: 180%;
+    padding-top: 5%;
+    position: absolute;
+}
 /*The first navigation */
 
 .anchornav {
