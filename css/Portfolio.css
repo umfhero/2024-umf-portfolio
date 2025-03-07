@@ -1,9 +1,8 @@
-/* Full-page gradient background */
 body {
     background: linear-gradient(135deg,
-            #8d3d3d,
+            #1e1e2f,
             /* Dark blue */
-            #091452
+            #2a2a40
             /* Darker blue */
         );
     margin: 0;
@@ -12,13 +11,18 @@ body {
     overflow-x: hidden;
     color: white;
 }
+/* Section with animated background */
 .section {
     background: url('/images/Animated\ Shape\ \(3\).svg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    min-height: 100vh;
+    /* Ensure it covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* The fixed Side */
 .side {
@@ -107,10 +111,12 @@ body {
     position: absolute;
 }
 
-/* App Panels */
+/* Portfolio container */
 .portfolio-container {
     padding: 50px;
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .portfolio-container h1 {
@@ -120,6 +126,7 @@ body {
     font-weight: 600;
 }
 
+/* App grid layout */
 .app-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -127,10 +134,16 @@ body {
     padding: 20px;
 }
 
+/* App card styling */
 .app-card {
-    background: rgba(255, 255, 255, 0.1);
-    /* Semi-transparent white */
-    border-radius: 15px;
+/* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+
     overflow: hidden;
     text-decoration: none;
     color: white;
@@ -151,7 +164,8 @@ body {
 .app-image img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
+    /* Ensure images fit well */
     border-radius: 15px;
 }
 
