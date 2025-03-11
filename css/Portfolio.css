@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     color: white;
 }
+
 /* Section with animated background */
 .section {
     background: url('/images/Animated\ Shape\ \(3\).svg') no-repeat center center;
@@ -24,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 /* The fixed Side */
 .side {
     position: fixed;
@@ -136,14 +138,12 @@ body {
 
 /* App card styling */
 .app-card {
-/* From https://css.glass */
-    background: rgba(255, 255, 255, 0.07);
+    background: linear-gradient(135deg, rgba(30, 30, 47, 0.9), rgba(46, 49, 146, 0.2));
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.41);
-
     overflow: hidden;
     text-decoration: none;
     color: white;
@@ -151,38 +151,136 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+    /* Reduced padding */
+    position: relative;
+    height: 330px;
+    /* Fixed height for all cards */
 }
 
 .app-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.15);
-    /* Slightly brighter on hover */
+    background: linear-gradient(135deg, rgba(30, 30, 47, 0.95), rgba(46, 49, 146, 0.25));
 }
 
+/* Smaller icon/image */
 .app-image img {
-    width: 100%;
-    height: 200px;
+    width: 80px;
+    /* Smaller fixed width */
+    height: 80px;
+    /* Smaller fixed height */
     object-fit: contain;
-    /* Ensure images fit well */
     border-radius: 15px;
+    margin-bottom: 10px;
+    /* Reduced margin */
 }
 
-.app-content {
-    padding: 20px;
+/* Title and description */
+.app-content h3 {
+    font-size: 28px;
+    /* Slightly smaller font size */
+    margin: 0 0 8px;
+    /* Reduced margin */
+    color: white;
+    font-weight: 600;
     text-align: center;
 }
 
-.app-content h3 {
-    font-size: 24px;
+.app-content p {
+    font-size: 13px;
+    /* Smaller font size */
     margin: 0 0 10px;
-    color: white;
-    font-weight: 600;
+    /* Reduced margin */
+    color: #ddd;
+    text-align: center;
+    line-height: 1.4;
+    /* Improved line spacing */
 }
 
-.app-content p {
-    font-size: 16px;
-    margin: 0;
-    color: #ddd;
+/* Progress bar styling */
+.progress-bar {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 5px;
+    /* Thinner progress bar */
+    margin-top: 8px;
+    /* Reduced margin */
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.progress {
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.progress-percentage {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    /* Reduced margin */
+    text-align: right;
+    width: 100%;
+}
+
+/* Line break */
+.line-break {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    /* Reduced margin */
+}
+
+/* Start date and time ago at the top */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Space below the top section */
+}
+
+.start-date {
+    font-weight: bold;
+    font-size: 18px;
+    /* Smaller font size */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.time-ago {
+    font-style: italic;
+    font-size: 15px;
+    /* Smaller font size */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tags below the line */
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    /* Space above the tags */
+    flex-wrap: wrap;
+    /* Allow tags to wrap to the next line if needed */
+    justify-content: center;
+    /* Center tags horizontally */
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.1);
+    /* Darker tags */
+    padding: 4px 8px;
+    /* Reduced padding */
+    border-radius: 12px;
+    /* Smaller border radius */
+    font-size: 13px;
+    /* Smaller font size */
+    color: white;
+    font-weight: bold;
 }
