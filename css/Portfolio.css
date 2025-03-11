@@ -183,14 +183,23 @@ body {
 }
 
 /* Title and description */
+.app-content {
+    flex-grow: 1;
+    /* Allow content to grow and push the line break to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
 .app-content h3 {
-    font-size: 28px;
+    font-size: 25px;
     /* Slightly smaller font size */
     margin: 0 0 8px;
     /* Reduced margin */
     color: white;
     font-weight: 600;
-    text-align: center;
 }
 
 .app-content p {
@@ -199,7 +208,6 @@ body {
     margin: 0 0 10px;
     /* Reduced margin */
     color: #ddd;
-    text-align: center;
     line-height: 1.4;
     /* Improved line spacing */
 }
@@ -209,8 +217,8 @@ body {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     height: 5px;
-    /* Thinner progress bar */
-    margin-top: 8px;
+    /* Fixed height */
+    margin-top: 10px;
     /* Reduced margin */
     overflow: hidden;
     width: 100%;
@@ -270,8 +278,8 @@ body {
 .tags {
     display: flex;
     gap: 8px;
-    margin-top: 10px;
-    /* Space above the tags */
+    margin-top: auto;
+    /* Push tags to the bottom */
     flex-wrap: wrap;
     /* Allow tags to wrap to the next line if needed */
     justify-content: center;
