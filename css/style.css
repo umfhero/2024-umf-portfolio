@@ -1,17 +1,14 @@
 :root {
-  --Accent1: #09141d;
-  /* var(--Accent1) */
-  --Accent2: #091d0f;
-  /* var(--text1) */
+  --Accent1: #1e1e1e;
+  /* Almost black for bottom section */
+  --Accent2: #2f49a0;
+  /* Indigo for top section */
 
-
-  --Text1: white;
-  /* var(--Accent1) */
-  --Text2: white;
-  /* var(--text2) */
-
+  --Text1: #e0e0e0;
+  /* Light gray for bottom section */
+  --Text2: #ffffff;
+  /* White for top section */
 }
-
 *,
 *::before,
 *::after {
@@ -191,7 +188,7 @@ a {
   width: 1.3rem;
   display: block;
   height: 2px;
-  background: black;
+  background: rgb(255, 255, 255);
 }
 
 .anchornav li:last-child::after {
@@ -219,8 +216,8 @@ a {
 }
 
 .anchornav a:hover {
-  color: #6fc768;
-  font-size: 19px;
+  color: #ffffff;
+  font-size: 25px;
 }
 
 .anchornav a:hover span {
