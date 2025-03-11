@@ -108,7 +108,21 @@ a {
   white-space: nowrap;
   word-spacing: 1.1rem;
 }
+.bottom a i {
+  font-size: 22px;
+  /* Adjust this value to make the icons larger */
+  color: white;
+  /* Ensure the icons are white */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effects */
+}
 
+.bottom a:hover i {
+  font-size: 28px;
+  /* Slightly larger on hover */
+  color: var(--Text2);
+  /* Use your accent color for hover */
+}
 .side .top {
   top: 25px;
   text-align: right;
