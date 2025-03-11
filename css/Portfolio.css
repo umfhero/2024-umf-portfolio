@@ -1,8 +1,5 @@
 body {
-    background: linear-gradient(135deg,
-            #2f49a0,
-            #63b997
-        );
+    background: linear-gradient(135deg, #2f49a0, #63b997);
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -18,7 +15,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     min-height: 100vh;
-    /* Ensure it covers the full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,14 +32,14 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.0875rem;
+    letter-spacing: 0.0975rem;
     font-size: 13px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
-    background: rgba(30, 30, 47, 0.5);
-    /* Semi-transparent background for glass effect */
+    background: url('/images/glass-bg.jpg') repeat-y;
+    background-size: cover;
 }
 
 .side:hover {
@@ -62,14 +58,11 @@ body {
     word-spacing: 0;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
     text-decoration: none;
-    /* Remove default underline */
     border-bottom: 2px solid transparent;
-    /* Add transparent underline */
 }
 
 .side a:hover {
     border-bottom: 2px solid white;
-    /* White underline on hover */
 }
 
 .side .top,
@@ -81,7 +74,18 @@ body {
     height: 40px;
     line-height: 59px;
     white-space: nowrap;
-    word-spacing: 1.1rem;
+    word-spacing: 2.8rem;
+}
+
+.bottom a i {
+    font-size: 22px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.bottom a:hover i {
+    font-size: 28px;
+    color: var(--Text2);
 }
 
 .side .top {
@@ -150,10 +154,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    /* Reduced padding */
     position: relative;
     height: 330px;
-    /* Fixed height for all cards */
 }
 
 .app-card:hover {
@@ -166,16 +168,12 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* Space between the images */
     margin-bottom: 10px;
-    /* Reduced margin */
 }
 
 .app-image img {
     width: 80px;
-    /* Smaller fixed width */
     height: 80px;
-    /* Smaller fixed height */
     object-fit: contain;
     border-radius: 15px;
 }
@@ -183,7 +181,6 @@ body {
 /* Title and description */
 .app-content {
     flex-grow: 1;
-    /* Allow content to grow and push the line break to the bottom */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,21 +190,16 @@ body {
 
 .app-content h3 {
     font-size: 22px;
-    /* Slightly smaller font size */
     margin: 0 0 8px;
-    /* Reduced margin */
     color: white;
     font-weight: 600;
 }
 
 .app-content p {
     font-size: 13px;
-    /* Smaller font size */
     margin: 0 0 10px;
-    /* Reduced margin */
     color: #ddd;
     line-height: 1.4;
-    /* Improved line spacing */
 }
 
 /* Progress bar styling */
@@ -215,9 +207,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     height: 5px;
-    /* Fixed height */
     margin-top: 10px;
-    /* Reduced margin */
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -234,7 +224,6 @@ body {
     font-size: 12px;
     color: white;
     margin-top: 5px;
-    /* Reduced margin */
     text-align: right;
     width: 100%;
 }
@@ -245,7 +234,6 @@ body {
     height: 1px;
     background: rgba(255, 255, 255, 0.2);
     margin: 10px 0;
-    /* Reduced margin */
 }
 
 /* Start date and time ago at the top */
@@ -255,20 +243,17 @@ body {
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
-    /* Space below the top section */
 }
 
 .start-date {
     font-weight: bold;
     font-size: 18px;
-    /* Smaller font size */
     color: rgba(255, 255, 255, 0.8);
 }
 
 .time-ago {
     font-style: italic;
     font-size: 15px;
-    /* Smaller font size */
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -277,22 +262,15 @@ body {
     display: flex;
     gap: 8px;
     margin-top: auto;
-    /* Push tags to the bottom */
     flex-wrap: wrap;
-    /* Allow tags to wrap to the next line if needed */
     justify-content: center;
-    /* Center tags horizontally */
 }
 
 .tag {
     background: rgba(255, 255, 255, 0.1);
-    /* Darker tags */
     padding: 4px 8px;
-    /* Reduced padding */
     border-radius: 12px;
-    /* Smaller border radius */
     font-size: 13px;
-    /* Smaller font size */
     color: white;
     font-weight: bold;
 }
