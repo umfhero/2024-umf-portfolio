@@ -2,11 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Centralized dates for all projects
     const projectDates = [
         { id: "Beef", startDate: "2022-02-25" }, // BeEF XSS and SQL Injection
-        { id: "LocalNetwork", startDate: "2023-04-27" }, // Local Network Security
-        { id: "Java", startDate: "2024-02-10" }, // Java Encryption
-        { id: "Wireshark", startDate: "2021-03-05" }, // Wireshark
-        { id: "Burp", startDate: "2025-02-20" }, // Burp Suite
-        { id: "GameHacks", startDate: "2025-05-02" }, // Game hacks
+        { id: "LocalNetwork", startDate: "2023-04-27" }, 
+        { id: "Ransomware", startDate: "2025-05-10" }, 
+        { id: "BruteForce", startDate: "2025-04-05" }, 
+        { id: "AutomatedBurp", startDate: "2025-05-20" }, 
+        { id: "MalwareDropper", startDate: "2025-07-02" }, 
+        { id: "IDS", startDate: "2025-06-02" }, 
         { id: "Placeholder", startDate: "" }, // Placeholder (no date)
     ];
 

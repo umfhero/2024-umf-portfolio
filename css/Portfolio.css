@@ -1,9 +1,7 @@
 body {
     background: linear-gradient(135deg,
-            #1e1e2f,
-            /* Dark blue */
-            #2a2a40
-            /* Darker blue */
+            #2f49a0,
+            #63b997
         );
     margin: 0;
     padding: 0;
@@ -194,7 +192,7 @@ body {
 }
 
 .app-content h3 {
-    font-size: 25px;
+    font-size: 22px;
     /* Slightly smaller font size */
     margin: 0 0 8px;
     /* Reduced margin */
