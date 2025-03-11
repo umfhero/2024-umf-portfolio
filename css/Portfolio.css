@@ -164,7 +164,15 @@ body {
     background: linear-gradient(135deg, rgba(30, 30, 47, 0.95), rgba(46, 49, 146, 0.25));
 }
 
-/* Smaller icon/image */
+.app-image {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between the images */
+    margin-bottom: 10px;
+    /* Reduced margin */
+}
+
 .app-image img {
     width: 80px;
     /* Smaller fixed width */
@@ -172,8 +180,6 @@ body {
     /* Smaller fixed height */
     object-fit: contain;
     border-radius: 15px;
-    margin-bottom: 10px;
-    /* Reduced margin */
 }
 
 /* Title and description */

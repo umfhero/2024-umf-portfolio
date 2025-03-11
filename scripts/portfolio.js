@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "Java", startDate: "2024-02-10" }, // Java Encryption
         { id: "Wireshark", startDate: "2021-03-05" }, // Wireshark
         { id: "Burp", startDate: "2025-02-20" }, // Burp Suite
+        { id: "GameHacks", startDate: "2025-05-02" }, // Game hacks
         { id: "Placeholder", startDate: "" }, // Placeholder (no date)
     ];
 

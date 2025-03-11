@@ -17,12 +17,12 @@
             <div class="bottom">
                 <a href="mailto:umcfaiz@gmail.com">Email</a>
                 <a href="/Pages/Timeline.html">Timeline</a>
-                <a href="/Pages/Portfolio.html">Homelabs</a>
+                 <a href="/Pages/Homelab.html">Homelabs</a>
             </div>
         </div>
     </nav>
     <article>
-        <header class="banner" style="background-image: url('/images/BeefTerm.png'); border: 1px solid rgba(255, 255, 255, 0.24);">
+        <header class="banner" style="background-image: url('/images/beef/Beef_2.png'); border: 1px solid rgba(255, 255, 255, 0.24);">
             <div class="upper-header">
                 <div class="mini-title">project beef</div>
                 <div class="date-since">
@@ -51,41 +51,38 @@
                 <p class="item-text"><span class="item-data">Apache2</span></p>
             </div>
             <div class="summary-item">
-                <h5 class="item-title">OS</h5>
+                <h5 class="item-title">Linux distribution</h5>
                 <p class="item-text"><span class="item-data">Kali</span> Linux</p>
             </div>
             <div class="summary-item">
                 <h5 class="item-title">Completion Date</h5>
                 <p class="item-text"><span class="item-data" id="dateData"></span></p>
             </div>
-            <div class="summary-item">
-                <h5 class="item-title">Tools Used</h5>
-                <p class="item-text"><span class="item-data">BEef, Apache2, VirtualBox</span></p>
-            </div>
         </section>
 
 
 		        <section class="additional-info">
             <h4>Additional Homelab Details</h4>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h5>Network Configuration</h5>
-                    <p>Configured a local network using VirtualBox to simulate real-world attack scenarios.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h5>Web Hook Configuration</h5>
+                        <p>Configured a clone of a website and embedded the hook link.</p>
+                    </div>
+                    <div class="info-item">
+                        <h5>Server</h5>
+                        <p>I used Apache2 to start the server and used the IP address given to host the hooked website on.</p>
+                    </div>
+                    <div class="info-item">
+                        <h5>Learning Outcomes</h5>
+                        <p>Managed to send the target device web exploits such as web redirects, play sound files, obtain geolocation (with and without permission from the user) and even send downloadable files.</p>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <h5>Security Measures</h5>
-                    <p>Implemented firewalls and monitored traffic to ensure ethical use of the BEef framework.</p>
-                </div>
-                <div class="info-item">
-                    <h5>Learning Outcomes</h5>
-                    <p>Gained hands-on experience with penetration testing tools and ethical hacking techniques.</p>
-                </div>
-            </div>
         <section class="main-article">
             <h4>Exploring the Capabilities of BEef</h4>
-            <blockquote class="pullquote">Running on: Kali Linux within Oracle VirtualBox, BEef on Apache2.</blockquote>
-            <p>I used BEef, which stands for Browser Exploitation Framework, for testing purposes. It's a tool that can be used for malicious purposes such as hacking, attacking websites, stealing information, and infecting systems with malware. I infected a browser on my alternate device by running the BEef program and injecting a JS link into a webpage. Once the infected page is opened on any device, the BEef control panel connected can show all hooked devices, including information such as IP address, platform accessed from, operating system and hardware details.</p>
-            <p>To be able to hook a browser over the internet, I connected my link through an Apache2 HTTP server, which allowed me to completely compromise my alternate device. Once I clicked on the link I sent myself, the device was hooked, and even if the browser was closed, the machine would stay subject to my attacks. The BEef program had many different types of attacks available, including browser exploits, which allowed me to access a device's hardware such as sound or webcam. Additionally, there were social engineering exploits such as redirected webpages, including a clone of Google's page, which allowed a gateway between the device, sending any keyboard actions to my device through the Apache2 server, this could be in the form of usernames, emails and passwords.</p>
+
+            <p>I used BEef, which stands for Browser Exploitation Framework, for browser testing purposes. It's a tool that can be used for malicious purposes such as hacking, attacking websites, stealing information and infecting systems with malware. I infected a browser on my alternate device by running the BEef program and injecting the beef JavaScript Hook link into a webpage clone. The reason for cloning a website was to further test the ability to hide the link on a seemingly safe website. Once the infected page was opened on my alternate device, the BEef control panel connected showed all hooked devices, including information such as IP address, platform accessed from, operating system and hardware details.</p>
+            <p>To be able to hook a browser over the internet, I connected my link through an Apache2 HTTP server (This required port forwarding), which allowed me to completely compromise my alternate device. Once I clicked on the link I sent myself, the device was hooked, and even if the browser was closed, the machine would stay subject to my attacks (If Man in the Browser exploit was active). The BEef program had many different types of attacks available, including browser exploits, which allowed me to access a device's hardware such as sound or webcam. Additionally, there were social engineering exploits such as redirected webpages, including a clone of Google's page, which allowed a gateway between the device, sending any keyboard actions to my device through the Apache2 server, this could be in the form of usernames, emails and passwords.</p>
+            <blockquote class="pullquote">Below are images of the stages contained in this browser exploitation testing.</blockquote>
             <div class="gallery">
                 <div class="gallery-mask mask-off">
                     <img class="mask-image" src="" alt="" width="200">

@@ -166,7 +166,9 @@ header {
     box-shadow: 5px 5px 5px #00000060;
     overflow: hidden;
     /* Ensure the overlay doesn't overflow */
+
 }
+
 
 .header-overlay {
     position: absolute;
@@ -174,18 +176,16 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Dark overlay with 60% opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity here */
     z-index: 1;
-    /* Place it above the background image but below the text */
 }
 
 .upper-header,
 .lower-header {
     position: relative;
-    /* Ensure text is above the overlay */
     z-index: 2;
-    /* Place text above the overlay */
+    /* Ensure content is above the overlay */
 }
 
 /* Adjust text colors for better contrast */
@@ -419,17 +419,50 @@ header {
 .info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
+    align-items: start;
+
+    /* Align items to the top */
+}
+
+.info-item h5 {
+    color: rgb(241, 241, 241);
+    font-size: 18px;
 }
 
 .info-item {
-    padding: 20px;
+    height: 100%;
+    padding: 15px;
     border-radius: 16px;
     background: rgba(89, 89, 89, 0.3);
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.24);
+    word-wrap: break-word;
+    /* Ensure text wraps properly */
+    overflow-wrap: break-word;
+    /* Alternative for better browser support */
+    min-width: 0;
+    /* Prevent grid items from overflowing */
+}
+
+.info-item h5 {
+    margin-bottom: 10px;
+    /* Add spacing below headings */
+}
+
+.info-item p {
+    margin: 0;
+    /* Remove default paragraph margins */
+    line-height: 1.5;
+    /* Improve readability */
+    text-align: justify;
+    /* Justify the text */
+}
+
+section {
+    text-align: justify;
 }
 
 /* Responsive Design */
