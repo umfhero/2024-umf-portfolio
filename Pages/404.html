@@ -24,10 +24,19 @@
 <div class="noise"></div>
 <div class="overlay"></div>
 <div class="terminal">
-  <h1>Error <span class="errorcode">404</span></h1>
-  <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
-  <p class="output">Please try to <a href="#" onclick="goBack()">go back</a> or <a href="/Index.html">return to the homepage</a>.</p>
-  <p class="output">Good luck.</p>
+  <div class="terminal-header">
+    <h1>Error <span class="errorcode">404</span></h1>
+    <p class="subtitle">System Failure</p>
+  </div>
+  <div class="terminal-body">
+    <p class="output">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+    <p class="output">Please try one of the following:</p>
+    <ul class="options">
+      <li><a href="#" onclick="goBack()">[ Go Back ]</a></li>
+      <li><a href="/Index.html">[ Return to Homepage ]</a></li>
+    </ul>
+    <p class="output">Good luck, operator.</p>
+  </div>
 </div>
 
 <script>
