@@ -1,12 +1,19 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
-html {
-  min-height: 100%;
+html,
+body {
+  min-height: 100vh;
+  /* Ensure the body takes up the full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Disable scrolling */
 }
 
 body {
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
+  /* Ensure the body takes up the full viewport height */
   background-color: #000000;
   background-image: radial-gradient(#0a1f4d, #020a1a), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
   background-repeat: no-repeat;
@@ -18,15 +25,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  /* Changed to move the box lower */
-  margin: 0;
+  /* Move the terminal box lower */
   padding-top: 10vh;
-  /* Added to push the box down */
+  /* Push the terminal box down */
+  position: relative;
+  /* Ensure child elements are positioned relative to the body */
 }
 
 .noise {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
+  /* Changed to fixed to ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
@@ -38,7 +49,10 @@ body {
 
 .overlay {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
+  /* Changed to fixed to ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
@@ -88,16 +102,18 @@ body {
 .terminal {
   box-sizing: border-box;
   width: 90%;
-  /* Stretch sideways */
   max-width: 1000px;
-  /* Increased max-width for a wider box */
   padding: 2rem;
   border: 2px solid rgba(128, 192, 255, 0.2);
   background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 10px rgba(51, 153, 255, 0.5);
   text-transform: uppercase;
   margin-top: 10vh;
-  /* Push the box further down */
+  /* Push the terminal box further down */
+  position: relative;
+  /* Ensure it stays within the body */
+  z-index: 2;
+  /* Ensure it appears above the noise and overlay */
 }
 
 .terminal-header {
