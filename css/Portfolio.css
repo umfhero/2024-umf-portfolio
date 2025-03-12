@@ -7,6 +7,41 @@ body {
     color: white;
 }
 
+/* Hero Section */
+.hero {
+    background: url('/images/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 10px 20px; /* Reduced padding */
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+}
+
+.hero-content {
+    background: linear-gradient(135deg, rgba(30, 30, 47, 0.9), rgba(46, 49, 146, 0.2));
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
 /* Section with animated background */
 .section {
     background: url('/images/Animated\ Shape\ \(3\).svg') no-repeat center center;
@@ -18,6 +53,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px; /* Reduced padding */
+    padding-bottom: 20px; /* Reduced padding */
 }
 
 /* The fixed Side */
@@ -117,10 +154,11 @@ body {
 
 /* Portfolio container */
 .portfolio-container {
-    padding: 50px;
+    padding: 20px; /* Reduced padding */
     text-align: center;
     width: 100%;
     max-width: 1200px;
+    margin-top: 0; /* Reduced margin-top */
 }
 
 .portfolio-container h1 {
@@ -158,10 +196,42 @@ body {
     height: 330px;
 }
 
+.app-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
+    background-size: 50px 50px;
+    opacity: 0;
+    transition: opacity 0.1s ease; /* Faster transition */
+}
+
+.app-card:hover::before {
+    opacity: 0.3;
+}
+
 .app-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) skew(1deg, 1deg); /* Removed rotate effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background: linear-gradient(135deg, rgba(30, 30, 47, 0.95), rgba(46, 49, 146, 0.25));
+}
+
+.app-card:hover .app-image img {
+    transform: scale(1.1);
+    transition: transform 0.1s ease; /* Faster transition */
+}
+
+.app-card:hover .app-content h3 {
+    color: #4facfe;
+    transition: color 0.1s ease; /* Faster transition */
+}
+
+.app-card:hover .app-content p {
+    color: #00f2fe;
+    transition: color 0.1s ease; /* Faster transition */
 }
 
 .app-image {
@@ -206,11 +276,12 @@ body {
 .progress-bar {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    height: 5px;
+    height: 10px; /* Increased height */
     margin-top: 10px;
     overflow: hidden;
     width: 100%;
     position: relative;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .progress {
@@ -218,14 +289,28 @@ body {
     height: 100%;
     border-radius: 5px;
     transition: width 0.3s ease;
+    position: relative;
+}
+
+.progress::after {
+    content: attr(data-progress);
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 3px;
 }
 
 .progress-percentage {
-    font-size: 12px;
+    font-size: 14px; /* Increased font size */
     color: white;
     margin-top: 5px;
     text-align: right;
     width: 100%;
+    font-weight: bold;
 }
 
 /* Line break */
