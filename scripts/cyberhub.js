@@ -1,3 +1,4 @@
+// Layout will not be affected after remove below javascript code
 
 // Handle Image Gallery
 const galleryMask = document.querySelector(".gallery-mask");
@@ -22,7 +23,14 @@ galleryImgs.forEach((item) => {
 // Handle Publish Date
 const dateData = document.getElementById("dateData");
 const sinceData = document.getElementById("sinceData");
-let publishDate = "2025-04-25";
+let publishDate = "2023-04-27";
 
-dateData.innerHTML = moment(publishDate).format("LL");
-sinceData.innerHTML = moment(publishDate).fromNow();
+if (dateData) {
+    dateData.innerHTML = moment(publishDate).format("LL");
+    console.log("Date Data:", dateData.innerHTML); // Debugging line
+}
+
+if (sinceData) {
+    sinceData.innerHTML = moment(publishDate).fromNow();
+    console.log("Since Data:", sinceData.innerHTML); // Debugging line
+}

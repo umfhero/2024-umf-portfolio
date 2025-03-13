@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "AutomatedBurp", startDate: "2025-05-20" }, 
         { id: "MalwareDropper", startDate: "2025-07-02" }, 
         { id: "IDS", startDate: "2025-06-02" }, 
-        { id: "Placeholder", startDate: "" }, // Placeholder (no date)
+        { id: "mdxcyberhub", startDate: "2025-04-02" },
+        { id: "Placeholder", startDate: "" },// Placeholder (no date)
     ];
 
     function updateDates() {

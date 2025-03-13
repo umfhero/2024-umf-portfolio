@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #22222c;
+    display: flex;
+    justify-content: center;
+    width: 200vh;
+    height: 100vh;
+    padding: 100px;
+    color: white;
+    overflow-x: hidden;
+    background: url('/images/Animated Shape (3).svg') repeat-y center top;
+    background-size: cover;
+
+}
+
+body {
+    position: relative;
+    background-color: #22222c;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    color: white;
+    overflow-x: hidden;
+
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    opacity: 0.3;
+    /* Adjust opacity here */
+    z-index: -1;
+    /* Ensure it is behind the content */
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C6C6C6;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(37, 37, 37, 0.26);
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Ensure links are white */
+}
+
+body article {
+    width: 130%;
+    max-width: 1200px;
+}
+
+article {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Side Navigation */
+.side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 51px;
+    border-right: 1px dashed rgba(255, 255, 255, 0.281);
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.0875rem;
+    font-size: 13px;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.089);
+    background: url('/images/glass-bg.jpg') repeat-y;
+    background-size: cover;
+}
+
+.side:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.side .side__inner {
+    position: relative;
+    height: 95%;
+    white-space: nowrap;
+}
+
+.side a {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    word-spacing: 0;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.side a:hover {
+    border-bottom: 2px solid white;
+}
+
+.side .top,
+.side .bottom {
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg) perspective(1px);
+    transform-origin: 50px 50px;
+    height: 40px;
+    line-height: 59px;
+    white-space: nowrap;
+    word-spacing: 1.1rem;
+}
+
+.side .top {
+    top: 25px;
+    text-align: right;
+    color: white;
+}
+
+.side .bottom {
+    top: auto;
+    bottom: 75px;
+}
+
+.side .bottom:hover a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.side .bottom:hover a:hover {
+    color: white;
+    font-size: 15px;
+}
+
+/* Header Overlay */
+header {
+    position: relative;
+    /* Ensure the overlay is contained within the header */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 400px;
+    padding: 29px;
+    border-radius: 16px;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px #00000060;
+    overflow: hidden;
+    /* Ensure the overlay doesn't overflow */
+
+}
+
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity here */
+    z-index: 1;
+}
+
+.upper-header,
+.lower-header {
+    position: relative;
+    z-index: 2;
+    /* Ensure content is above the overlay */
+}
+
+/* Adjust text colors for better contrast */
+.title,
+.subtitle,
+.optitile,
+.mini-title,
+.date-since,
+.tags-container {
+    color: white;
+    /* Ensure text is white for better readability */
+}
+
+.mini-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.date-since {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: 0.875rem;
+}
+
+.date-since .date-value {
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.date-since svg {
+    width: 20px;
+    margin-left: 10px;
+    fill: white;
+    /* Changed back to white */
+}
+
+.tags-container {
+    display: flex;
+    align-items: center;
+    opacity: 0.75;
+    margin-bottom: 12px;
+}
+
+.tags-container svg {
+    width: 20px;
+    margin-right: 10px;
+    fill: white;
+    /* Changed back to white */
+}
+
+.tags-container span {
+    font-size: 0.875rem;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 2px solid #00ff88;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    /* Adjusted for better readability */
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.subtitle {
+    width: 100%;
+    /* Adjusted to take full width */
+    margin-top: 10px;
+    opacity: 0.75;
+    line-height: 1.5;
+    /* Improved line height */
+    font-size: 1rem;
+    /* Adjusted for better readability */
+}
+
+.optitile {
+    float: right;
+    opacity: 0.75;
+    padding-top: 4%;
+}
+
+/* Summary Section */
+.summary {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 30px 50px;
+    border-radius: 16px;
+    background: rgba(89, 89, 89, 0.3);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.summary-item {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.item-title {
+    color: #999;
+}
+
+.item-text {
+    margin-top: 12px;
+    font-size: 1.5rem;
+}
+
+/* Main Article */
+.main-article {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    line-height: 1.75;
+}
+
+.main-article h4 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 1.25em;
+}
+
+.main-article p {
+    opacity: 80%;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.125em;
+}
+
+.main-article blockquote {
+    position: relative;
+    margin: 40px 0;
+    padding: 40px;
+    background: rgba(89, 89, 89, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+/* Gallery */
+.gallery {
+    display: none; /* Hide the gallery section */
+}
+
+.gallery-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    background-color: #22222288;
+    transition: 500ms;
+}
+
+.gallery-mask img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 500ms;
+}
+
+.mask-off {
+    visibility: hidden;
+    background-color: #22222200;
+}
+
+.mask-off img {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Additional Info Section */
+.additional-info {
+    margin-top: 50px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: start;
+
+    /* Align items to the top */
+}
+
+.info-item h5 {
+    color: rgb(241, 241, 241);
+    font-size: 18px;
+}
+
+.info-item {
+    height: 100%;
+    padding: 15px;
+    border-radius: 16px;
+    background: rgba(89, 89, 89, 0.3);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    word-wrap: break-word;
+    /* Ensure text wraps properly */
+    overflow-wrap: break-word;
+    /* Alternative for better browser support */
+    min-width: 0;
+    /* Prevent grid items from overflowing */
+}
+
+.info-item h5 {
+    margin-bottom: 10px;
+    /* Add spacing below headings */
+}
+
+.info-item p {
+    margin: 0;
+    /* Remove default paragraph margins */
+    line-height: 1.5;
+    /* Improve readability */
+    text-align: justify;
+    /* Justify the text */
+}
+
+section {
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 50px;
+    }
+
+    .lower-header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 25px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
