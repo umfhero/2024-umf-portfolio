@@ -167,6 +167,10 @@ a {
 
 .wrapper {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .ConRight {
@@ -231,12 +235,30 @@ a {
 
 .anchornav a:hover {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px; /* Decreased hover size effect */
 }
 
 .anchornav a:hover span {
   opacity: 100%;
   color: #ffffff;
+}
+
+.award-banner {
+  background-color: var(--Accent2);
+  color: var(--Text2);
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.award-banner a {
+  color: var(--Text2);
+  font-weight: bold;
+}
+
+.award-banner a:hover {
+  text-decoration: underline;
 }
 
 /*The different sections*/
@@ -380,6 +402,19 @@ a {
 
 .section.section--Services svg {
   fill: white;
+}
+
+.section.section--highlights {
+  background-color: var(--Accent2);
+  color: var(--Text2);
+}
+
+.section.section--highlights svg {
+  fill: var(--Accent2);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 /*Text*/
@@ -622,4 +657,95 @@ p a:hover {
   50% {
     border-color: transparent
   }
+}
+
+.achievement-badge {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(30, 30, 47, 0.9), rgba(46, 49, 146, 0.2));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  padding: 20px;
+  text-align: left;
+  margin-left: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  overflow: hidden;
+  width: 400px; /* Adjusted width for landscape orientation */
+  height: auto;
+  text-decoration: none; /* Ensure the entire box is clickable */
+  color: white;
+}
+
+.achievement-badge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
+  background-size: 50px 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.achievement-badge:hover::before {
+  opacity: 0.3;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.achievement-image img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 16px; /* Round the corners of the profile picture */
+}
+
+.achievement-badge:hover {
+  transform: translateY(-10px) skew(1deg, 1deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(30, 30, 47, 0.95), rgba(46, 49, 146, 0.25));
+}
+
+.achievement-badge:hover img {
+  transform: scale(1.1);
+}
+
+.achievement-badge h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.achievement-badge p {
+  font-size: 16px;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.achievement-badge p a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+.achievement-badge p a:hover {
+  text-decoration: underline;
 }
