@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="description" content="Portfolio">
     <meta name="author" content="Majid">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
@@ -23,7 +23,40 @@
         gtag('js', new Date());
         gtag('config', 'G-948R1ZTM2D');
     </script>
-
+    <style>
+        @media screen and (max-width: 768px) {
+            article {
+                padding: 0 1rem;
+            }
+            .banner {
+                padding: 2rem 1rem;
+            }
+            .title {
+                font-size: 1.75rem;
+            }
+            .subtitle, .optitile {
+                font-size: 1rem;
+            }
+            .summary {
+                flex-direction: column;
+            }
+            .summary-item {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            .image-item {
+                height: 200px;
+            }
+            .side {
+                width: auto;
+                padding: 0.5rem;
+                z-index: 100;
+            }
+        }
+    </style>
 </head>
 
 <body>
