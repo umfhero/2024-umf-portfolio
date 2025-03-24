@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Umar M. Faiz">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Apps</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-948R1ZTM2D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-948R1ZTM2D');
+    </script>
+    <style>
+        .download-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="side">
+        <div class="side__inner">
+            <div class="top"><a href="/index.html"> >Home</a></div>
+            <div class="bottom">
+                <a href="https://github.com/umfhero"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/umarmfaiz/"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:umcfaiz@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="/Pages/Timeline.html">Timeline</a>
+                <a href="/Pages/Homelab.html">Home labs</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>My Applications</h1>
+            <p>Explore various apps I've developed.</p>
+        </div>
+    </section>
+
+    <div class="section">
+        <div class="portfolio-container">
+            <div class="selection">
+                <div class="app-grid">
+                    <!-- LazySleep App Card -->
+                    <div class="app-card">
+                        <div class="top-section">
+                            <!-- ...any date/time elements if needed... -->
+                        </div>
+                        <div class="app-image">
+                            <img src="/images/clock2.ico" alt="LazySleep" style="width: 100px; height: 100px;">
+                        </div>
+                        <div class="app-content">
+                            <h3>LazySleep.exe</h3>
+                            <p>A lightweight utility that helps you schedule quick power naps by putting your system to sleep on a timer.</p>
+                            <a href="/downloads/lazysleep.exe" class="download-button">Download LazySleep</a>
+                        </div>
+                    </div>
+                    <!-- ...add more apps here if needed... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
